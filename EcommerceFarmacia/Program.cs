@@ -1,7 +1,6 @@
 
 using EcommerceFarmacia.Data;
 using Microsoft.EntityFrameworkCore;
-using projeto_farmacia.Data;
 
 namespace EcommerceFarmacia
 {

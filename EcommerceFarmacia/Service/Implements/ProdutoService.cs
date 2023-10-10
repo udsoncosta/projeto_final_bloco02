@@ -2,8 +2,6 @@
 using EcommerceFarmacia.Model;
 using EcommerceFarmacia.Service;
 using Microsoft.EntityFrameworkCore;
-using EcommerceFarmacia.Data;
-using EcommerceFarmacia.Model;
 
 namespace EcommerceFarmacia.Service.Implements
 {

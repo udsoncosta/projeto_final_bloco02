@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using EcommerceFarmacia.Model;
 
 namespace EcommerceFarmacia.Model
 {
@@ -26,6 +27,9 @@ namespace EcommerceFarmacia.Model
         [Column(TypeName = "varchar")]
         [StringLength(5000)]
         public string Foto { get; set; } = string.Empty;
+
+
+        public virtual Categoria? Categoria { get; set; }
 
 
     }
