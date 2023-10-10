@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using EcommerceFarmacia.Model;
 
 namespace EcommerceFarmacia.Model
 {
-    public class Produto
+    public class Produto : Auditable
     {
         [Key] //Primary Key (Id)
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // IDENTITY(1,1)
@@ -18,10 +17,7 @@ namespace EcommerceFarmacia.Model
         [StringLength(2000)]
         public string Descricao { get; set; } = string.Empty;
 
-        [Column(TypeName = "date")]
-        public DateOnly DataValidade { get; set; }
-
-        [Column(TypeName = "decimal(20,2)")]
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Preco { get; set; }
 
         [Column(TypeName = "varchar")]

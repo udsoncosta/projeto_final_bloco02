@@ -32,7 +32,7 @@ namespace EcommerceFarmacia.Controllers
             var Resposta = await _produtoService.GetById(id);
             if (Resposta is null)
             {
-                return NotFound();
+                return NotFound("Id do produto inválido!");
             }
             return Ok(Resposta);
         }

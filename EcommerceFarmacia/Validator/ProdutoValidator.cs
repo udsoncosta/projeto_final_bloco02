@@ -15,9 +15,6 @@ namespace EcommerceFarmacia.Validator
                 .NotEmpty()
                 .MaximumLength(2000);
 
-            RuleFor(p => p.DataValidade)
-                .NotEmpty();
-
             RuleFor(p => p.Foto)
                 .NotEmpty()
                 .MaximumLength(5000);

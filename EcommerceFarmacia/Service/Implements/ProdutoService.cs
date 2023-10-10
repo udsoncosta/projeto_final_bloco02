@@ -1,6 +1,5 @@
 ﻿using EcommerceFarmacia.Data;
 using EcommerceFarmacia.Model;
-using EcommerceFarmacia.Service;
 using Microsoft.EntityFrameworkCore;
 
 namespace EcommerceFarmacia.Service.Implements
@@ -51,7 +50,6 @@ namespace EcommerceFarmacia.Service.Implements
             return Produto;
         }
 
-        //
         public async Task<Produto?> Create(Produto produto)
         {
             await _context.Produtos.AddAsync(produto);
