@@ -71,7 +71,7 @@ namespace EcommerceFarmacia.Controllers
         public async Task<ActionResult> Update([FromBody] Produto produto)
         {
             if (produto.Id == 0)
-                return BadRequest("Id do produto é invalido");
+                return BadRequest("Id do produto invalido");
 
             var validarProduto = await _produtoValidator.ValidateAsync(produto);
 
